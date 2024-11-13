@@ -251,6 +251,10 @@ section {
     color: #FFF;
 }
 
+section .sombra{
+    filter: drop-shadow(4px 6px 12px rgb(255, 255, 255));
+}
+
 section h1 {
     text-align: center;
     font-size: 4rem;
@@ -258,7 +262,7 @@ section h1 {
 }
 
 .no-parallax {
-    background-color: #e4995c;
+    background-color: #fdbe94;
     z-index: 999;
 }
 

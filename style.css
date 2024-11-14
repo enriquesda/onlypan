@@ -32,6 +32,15 @@ body {
     font-family: "Outfit", sans-serif;
 }
 
+p {
+    width: 400px;
+    font-size: 20px;
+    height: 200px;
+    box-sizing: content-box;
+    /*border: red 2px solid;*/
+
+}
+
 /*este codigo sera para el margen superior de la pagina*/
 .barra-lateral {
     position: fixed;
@@ -78,18 +87,20 @@ body {
     min-height: 80px;
     cursor: pointer;
     margin-top: 10px;
-    margin-right:200px ;
-    margin-left:40px ;
+    margin-right: 200px;
+    margin-left: 40px;
     transition: opacity 0.5s ease, width 0.5s ease;
 }
+
 .barra-lateral .nombre-pagina .Original.esconder {
     width: 0px;
     opacity: 0;
     cursor: pointer;
     margin-top: 10px;
-    margin-right:0px ;
+    margin-right: 0px;
     margin-left: 0px;
 }
+
 .barra-lateral .nombre-pagina .mini {
     width: 50px;
     min-height: 40px;
@@ -180,7 +191,7 @@ body {
 }
 
 .barra-lateral .usuario img {
-    
+
     width: 60px;
     min-width: 60px;
     border-radius: 10px;
@@ -251,7 +262,7 @@ section {
     color: #FFF;
 }
 
-section .sombra{
+section .sombra {
     filter: drop-shadow(4px 6px 12px rgb(255, 255, 255));
 }
 
@@ -288,24 +299,27 @@ section h1 {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("./assets/fondopan.jpg");
     background-size: cover;
 }
+
 /*Pagina principal*/
-.fototext{
+.fototext {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.parallax img{
+
+.parallax img {
     width: 400px;
     min-width: 400px;
     border-radius: 10px;
 }
+
 .revelar {
     opacity: 0;
     visibility: hidden;
     will-change: transform, opacity;
-  }
+}
 
-  /*
+/*
   .contenedor-principal {
     overflow-y: auto;
     position: relative;  Asegúrate de que el contenedor no tenga `overflow: hidden`

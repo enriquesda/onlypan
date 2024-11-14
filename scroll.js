@@ -15,7 +15,7 @@ function animateFrom(elem, direction) {
   elem.style.transform = "translate(" + x + "px, " + y + "px)";
   elem.style.opacity = "0";
   gsap.fromTo(elem, { x: x, y: y, autoAlpha: 0 }, {
-    duration: 1.25,
+    duration: 2.25,
     x: 0,
     y: 0,
     autoAlpha: 1,
@@ -35,11 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
     hide(elem); // assure that the element is hidden when scrolled into view
 
     ScrollTrigger.create({
-      start: "top 80%",
-      end: "bottom 10%",
       trigger: elem,
       scroller: ".contenedor-principal",
-      markers: true,
+      markers: false,
       onEnter: function () { animateFrom(elem) },
       onEnterBack: function () { animateFrom(elem, -1) },
       onLeave: function () { hide(elem) } // assure that the element is hidden when scrolled into view

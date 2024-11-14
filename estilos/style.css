@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /* Utilizo unas variables con los colores que usare en un futuro para que me sea mas comodo*/
+    --color-barra-lateral: rgb(255, 255, 255);
+
+    --color-texto: rgb(124, 56, 0);
+    --color-texto-menu: rgb(68, 39, 1);
+
+    --color-boton: rgb(70, 45, 0);
+    --color-boton-texto: rgb(255, 255, 255);
+
+    --color-texto: rgb(124, 56, 0);
+    --color-texto-menu: rgb(68, 39, 1);
+
+    --color-nav: rgb(207, 140, 85);
+    --color-nav-texto: rgb(70, 35, 3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*cambia la forma en que se calculan las dimensiones de un elemento. Al aplicarla, el ancho y alto que defines para un elemento incluirán también los bordes y el padding del mismo, en lugar de añadirlos aparte.*/
+}
+
+body {
+    height: 100vh;
+    /*Nos ocupa toda la altura de la pagina*/
+    width: 100%;
+    background-color: rgb(245, 209, 155);
+    font-family: "Outfit", sans-serif;
+}
+
+p {
+    width: 400px;
+    font-size: 20px;
+    height: 200px;
+    box-sizing: content-box;
+    /*border: red 2px solid;*/
+
+}
+
+/*este codigo sera para el margen superior de la pagina*/
+.barra-lateral {
+    position: fixed;
+    /*hace que siempre se muestre fija en esa posicion*/
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    /*cualquier contenido que sobresalga de las dimensiones especificadas del elemento quedará oculto y no será visible.*/
+    padding: 20px 15px;
+    background-color: var(--color-barra-lateral);
+    transition: width 0.5s ease;
+}
+
+.mini-barra-lateral {
+    width: 80px;
+}
+
+.barra-lateral span {
+    width: 100px;
+    white-space: nowrap;
+    /*esto es para limitar que solo se escriba en una linea*/
+    font-size: 18px;
+    text-align: left;
+    opacity: 1;
+    transition: opacity 0.5s ease, width 0.5s ease;
+}
+
+.barra-lateral span.oculto {
+    opacity: 0;
+    width: 0;
+}
+
+.barra-lateral .nombre-pagina {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+
+.barra-lateral .nombre-pagina .Original {
+    width: 200px;
+    min-height: 80px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 200px;
+    margin-left: 40px;
+    transition: opacity 0.5s ease, width 0.5s ease;
+}
+
+.barra-lateral .nombre-pagina .Original.esconder {
+    width: 0px;
+    opacity: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.barra-lateral .nombre-pagina .mini {
+    width: 50px;
+    min-height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.barra-lateral .nombre-pagina span {
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+
+/*Este codigo sera para el boton*/
+
+.barra-lateral .boton {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-boton);
+    color: var(--color-boton-texto);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+
+.barra-lateral .boton ion-icon {
+    min-width: 50px;
+    min-height: 25px;
+}
+
+/*Menu de navegacion*/
+
+#Principal {
+
+    background-color: var(--color-nav);
+    color: var(--color-nav-texto);
+}
+
+.barra-lateral .navegacion li {
+    list-style: none;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.barra-lateral .navegacion a {
+
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: var(--color-texto-menu);
+    background-color: var(--color-barra-lateral);
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+.barra-lateral .navegacion a:hover {
+    background-color: var(--color-nav);
+    color: var(--color-nav-texto);
+}
+
+.barra-lateral .navegacion ion-icon {
+    min-width: 50px;
+    font-size: 20px;
+}
+
+
+/*Linea*/
+.barra-lateral .linea {
+    width: 200 px;
+    height: 3px;
+    background-color: var(--color-boton);
+    margin-bottom: 200px;
+}
+
+/*Informacion de usuario*/
+.barra-lateral .usuario {
+    width: 100%;
+    display: flex;
+}
+
+.barra-lateral .usuario img {
+
+    width: 60px;
+    min-width: 60px;
+    border-radius: 10px;
+}
+
+.barra-lateral .usuario .info-usuario {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-nav-texto);
+    overflow: hidden;
+}
+
+.barra-lateral .usuario .datos-usuario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.barra-lateral .usuario .nombre {
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.barra-lateral .usuario .email {
+    font-size: 20px;
+}
+
+.barra-lateral .usuario ion-icon {
+    font-size: 30px;
+}
+
+
+/*Contenido principal de la pagina*/
+main {
+    margin-left: 300px;
+    transition: margin-left 0.5s;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+main.minmain {
+    margin-left: 80px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+section {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+}
+
+section .sombra {
+    filter: drop-shadow(4px 6px 12px rgb(255, 255, 255));
+}
+
+section h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: sans-serif;
+}
+
+.no-parallax {
+    background-color: #fdbe94;
+    z-index: 999;
+}
+
+.parallax h1 {
+    width: 60%;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.bg::after {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/fondopan.jpg");
+    background-size: cover;
+}
+
+/*Pagina principal*/
+.fototext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax img {
+    width: 400px;
+    min-width: 400px;
+    border-radius: 10px;
+}
+
+.revelar {
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, opacity;
+}
+
+/*
+  .contenedor-principal {
+    overflow-y: auto;
+    position: relative;  Asegúrate de que el contenedor no tenga `overflow: hidden`
+  }
+  */

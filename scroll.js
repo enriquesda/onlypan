@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hide(elem); // assure that the element is hidden when scrolled into view
 
     ScrollTrigger.create({
-      start: "top 90%",
+      start: "top 80%",
       end: "bottom 10%",
       trigger: elem,
       scroller: ".contenedor-principal",

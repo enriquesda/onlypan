@@ -48,6 +48,9 @@ p {
     width: 300px;
     height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     /*cualquier contenido que sobresalga de las dimensiones especificadas del elemento quedará oculto y no será visible.*/
     padding: 20px 15px;
     background-color: var(--color-barra-lateral);

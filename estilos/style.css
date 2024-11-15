@@ -235,9 +235,11 @@ main {
     margin-left: 300px;
     transition: margin-left 0.5s;
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
     perspective: 2px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
 }
 
 main.minmain {
@@ -250,11 +252,12 @@ main.minmain {
     box-sizing: border-box;
 }
 
+html{
+    height: 100vh;
+    overflow: hidden;
+}
 
 section {
-    transform-style: preserve-3d;
-    position: relative;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -262,6 +265,38 @@ section {
     color: #FFF;
 }
 
+.no-parallax,.parallax{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+
+} 
+.parallax::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../assets/fondopan.jpg") top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.2);
+    filter: blur(2px);
+}
+
+.parallax::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../assets/fondo_despues.png") top center;
+    background-size: cover;
+    
+
+}
+.fotopara{
+    width: 200px;
+    transform: translateZ(-0.8px) scale(1.8,1.6)
+}
 section .sombra {
     filter: drop-shadow(4px 6px 12px rgb(255, 255, 255));
 }
@@ -281,24 +316,10 @@ section h1 {
     width: 60%;
     font-size: 5rem;
     margin-bottom: 20px;
+    color: black;
+  
 }
 
-.parallax::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateZ(-1px) scale(1.5);
-    background-size: 100%;
-    z-index: -1;
-}
-
-.bg::after {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../assets/fondopan.jpg");
-    background-size: cover;
-}
 
 /*Pagina principal*/
 .fototext {
@@ -318,6 +339,7 @@ section h1 {
     visibility: hidden;
     will-change: transform, opacity;
 }
+
 
 /*
   .contenedor-principal {

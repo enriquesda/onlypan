@@ -1,5 +1,4 @@
 
-
 .tabla_panes{
     position: relative;
     display: flex;
@@ -8,8 +7,8 @@
 }
 .tabla_panes .tar_pan{
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background: #fff;
     border-radius: 40px;
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
@@ -57,7 +56,7 @@
 
 .tabla_panes .tar_pan .text_pan {
    position: relative;
-   top: -20px;
+   top: -40px;
    z-index: 10;
    padding: 0 30px;
    transition: 0.5s;
@@ -99,3 +98,10 @@
 .tabla_panes .tar_pan:hover .imgpan::after {
     bottom: 80px;
 }
+
+
+table.tabla_panes td {
+    width: 200px; /* Ancho de cada celda */
+    height: 150px; /* Altura de cada celda */
+}
+

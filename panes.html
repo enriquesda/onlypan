@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,14 @@
     <link rel="stylesheet" href="./estilos/style.css">
     <link rel="stylesheet" href="./estilos/style_panes.css">
 </head>
+
 <body>
-    <div class="barra-lateral "> <!--usaremos dos clases, una tiene el formato normal y la otra para cuando necesitemos que sea pequeña-->
-        
+    <div class="barra-lateral ">
+        <!--usaremos dos clases, una tiene el formato normal y la otra para cuando necesitemos que sea pequeña-->
+
         <div class="nombre-pagina">
-            <img  class="Original" id="cloud" src="/assets/logogrande.png" alt="" >
-            <img class="mini" id="cloud" src="/assets/logop.png" alt="" >
+            <img class="Original" id="cloud" src="/assets/logogrande.png" alt="">
+            <img class="mini" id="cloud" src="/assets/logop.png" alt="">
         </div>
 
         <button class="boton">
@@ -25,14 +28,14 @@
         <nav class="navegacion">
             <ul>
                 <li>
-                    <a  href="index.html">
+                    <a href="index.html">
                         <ion-icon name="bag-handle-outline"></ion-icon>
                         <span>Tienda</span>
                     </a>
                 </li>
 
                 <li>
-                    <a   href="panaderias.html">
+                    <a href="panaderias.html">
                         <ion-icon name="storefront-outline"></ion-icon>
                         <span>Panaderias</span>
                     </a>
@@ -88,33 +91,90 @@
             <h1>Aqui hay miga....</h1>
             <div class="tabla_panes">
                 <div class="tar_pan">
-                    
-                    <div class="imgpan"  style="--img:url('/assets/payes.jpg')" ></div>
+
+                    <div class="imgpan" style="--img:url('/assets/payes.jpg')"></div>
                     <div class="text_pan">
                         <h3>Pan Payes <br></h3>
-                        <p>Elaborado con masa madre y fermentación lenta, lo que garantiza su intenso sabor y esa acidez que le caracteriza. Su peculiar forma viene dada por la cocción en horno de suela.</p>
+                        <p>Elaborado con masa madre y fermentación lenta, lo que garantiza su intenso sabor y esa acidez
+                            que le caracteriza. Su peculiar forma viene dada por la cocción en horno de suela.</p>
                     </div>
                 </div>
                 <div class="tar_pan">
-                    <div class="imgpan"  style="--img:url('/assets/pan1.jpg')"></div>
+                    <div class="imgpan" style="--img:url('/assets/pan1.jpg')"></div>
                     <div class="text_pan">
                         <h3>Barra Artesana<br></h3>
-                        <p>Crujiente por fuera, con una miga jugosa y compacta.Su larga fermentación no solo asegura comer verdadero pan, sino que da un sabor extraordinario que cambia por completo tus desayunos y comidas.</p>
+                        <p>Crujiente por fuera, con una miga jugosa y compacta.Su larga fermentación no solo asegura
+                            comer verdadero pan, sino que da un sabor extraordinario que cambia por completo tus
+                            desayunos y comidas.</p>
                     </div>
                 </div>
+                <div class="tar_pan">
+
+                    <div class="imgpan" style="--img:url('/assets/payes.jpg')"></div>
+                    <div class="text_pan">
+                        <h3>Pan Payes <br></h3>
+                        <p>Elaborado con masa madre y fermentación lenta, lo que garantiza su intenso sabor y esa acidez
+                            que le caracteriza. Su peculiar forma viene dada por la cocción en horno de suela.</p>
+                    </div>
+                </div>
+                <div class="tar_pan">
+                    <div class="imgpan" style="--img:url('/assets/pan1.jpg')"></div>
+                    <div class="text_pan">
+                        <h3>Barra Artesana<br></h3>
+                        <p>Crujiente por fuera, con una miga jugosa y compacta.Su larga fermentación no solo asegura
+                            comer verdadero pan, sino que da un sabor extraordinario que cambia por completo tus
+                            desayunos y comidas.</p>
+                    </div>
+                </div>
+                
             </div>
-          </section>
-          <section class="parallax bg">
-            <h1>Esto solo es el comienzo de una gran proyecto Nacho!</h1>
-          </section>
-          <section class="no-parallax">
-            <h1>....aun queda lo mejor</h1>
-          </section>
-    
+        </section>
+
+
+        <section class="parallaxden bg">
+            <h1 class="revelar">¿Como funciona?</h1>
+            <div class="fototext">
+                <div class="texto revelar revelar_izq">
+                    <h2 class="revelar">Muy sencillo empecemos eligiendo que pan quieres.</h2>
+                    <p class="revelar ">Nosotros te mostramos mostramos nuestra amplia seccion de panes que disponemos
+                        <br>Que dias los quieres y simplemente a final de mes se carga tu cuota</p>
+                </div>
+                <div class="imag revelar revelar_der">
+                    <a href="#">
+                        <img class="sombra" src="/assets/panes.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="no-parallax">
+            <h1 class="revelar revelar_der">....aun queda lo mejor</h1>
+            <div class="fototext">
+                <div class="imag revelar revelar_izq">
+                    <a href="#">
+                        <img class="sombra" src="/assets/logogrande.png" alt="">
+                    </a>
+                </div>
+                <div class="texto revelar revelar_der">
+                    <h2 class="revelar">¿Que hay mas español que el pan?</h2>
+                    <p class="revelar ">Pero seguro que mas de una vez no has comido pan por no tenerlo. <br>¿Pero y si
+                        te digo que eso de bajar a buscarlo se termino? <br>SI si , ahora te lo llevamos cada mañana a
+                        tu portal. Sigue bajando y te explicamos como. </p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <script src="xdev.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script src="scroll.js"></script>
+
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

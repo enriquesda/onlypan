@@ -20,8 +20,7 @@
 
 
 .tabla_panes .tar_pan .imgpan {
-    position: relative;
-    width: 100%;
+    position: relative;   
     height: 260px;
     background-image: var(--img);
     background-size: 100%;
@@ -58,7 +57,7 @@
 
 .tabla_panes .tar_pan .text_pan {
    position: relative;
-   top: -40px;
+   top: -90px;
    z-index: 10;
    padding: 0 30px;
    transition: 0.5s;
@@ -91,7 +90,7 @@
     opacity: 1;
 }
 .tabla_panes .tar_pan:hover .text_pan {
-    top: -80px;
+    top: -110px;
 }
 .tabla_panes .tar_pan:hover .imgpan::before {
     height: 120px; /* Cambia la altura de ::before */

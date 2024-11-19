@@ -367,16 +367,6 @@ section h1 {
     will-change: transform, opacity;
 }
 
-
-/*
-  .contenedor-principal {
-    overflow-y: auto;
-    position: relative;  Asegúrate de que el contenedor no tenga `overflow: hidden`
-  }
-  */
-
-
-
   /*contenedor de fotos*/
   .container{
     position: absolute;

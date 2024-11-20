@@ -282,15 +282,19 @@ tbody tr:hover {
 }
 
 .video-container {
-    width: 100%; /* Ajusta el tamaño del contenedor */
-    max-width: 800px; /* Tamaño máximo del video */
+    position: relative;
+    height: 600px;
+    width: 400px; /* Ajusta el tamaño del contenedor */
+    max-width: 400px; /* Tamaño máximo del video */
     margin: 0 auto; /* Centra el contenedor */
-    overflow: hidden; /* Evita que el contenido se desborde */
     border-radius: 15px; /* Bordes redondeados */
-}
 
+}
 .video {
-    width: 100%; /* Hace que el video ocupe todo el ancho del contenedor */
-    height: 100%; /* Mantiene las proporciones del video */
+  
+    position: absolute; /* Permite posicionar el video dentro del contenedor */
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que ocupe todo el alto del contenedor */
+    object-fit: cover;
     border-radius: 15px; /* Bordes redondeados en el video */
 }

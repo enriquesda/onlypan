@@ -247,7 +247,7 @@ div.table-title {
    padding:5px;
    width: 100%;
  }
- /*** Table Styles **/
+
 .tabla {
     margin-right: 30px;
     width: 100%;
@@ -257,21 +257,20 @@ div.table-title {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-/* Estilo de las celdas */
+
 th, td {
-    padding: 12px;
+    padding: 26px 20px;
     text-align: center;
    
 }
 
-/* Color de fondo de las cabeceras */
+
 th {
     background-color: #d4bfa3; /* Marrón pastel para la cabecera */
     color: #6a4f3d; /* Texto marrón oscuro */
     font-weight: bold;
 }
 
-/* Color de fondo de las filas */
 tbody tr {
     background-color: #f4e1c1ca; /* Color de fondo suave para las filas */
 }
@@ -283,9 +282,8 @@ tbody tr:hover {
 
 .video-container {
     position: relative;
-    height: 600px;
-    width: 400px; /* Ajusta el tamaño del contenedor */
-    max-width: 400px; /* Tamaño máximo del video */
+    height: 500px;
+    width: 750px; /* Ajusta el tamaño del contenedor */
     margin: 0 auto; /* Centra el contenedor */
     border-radius: 15px; /* Bordes redondeados */
 
@@ -297,4 +295,17 @@ tbody tr:hover {
     height: 100%; /* Asegura que ocupe todo el alto del contenedor */
     object-fit: cover;
     border-radius: 15px; /* Bordes redondeados en el video */
+}
+
+.video_texto{
+    color: white; /* Asegura que el texto sea visible sobre el video */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno para el texto */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+    position: absolute; /* Permite posicionar el video dentro del contenedor */
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    height: 35%; /* Asegura que ocupe todo el alto del contenedor */
+    object-fit: cover;
+    border-radius: 15px; /* Bordes redondeados en el video */
+    bottom: 0;
 }

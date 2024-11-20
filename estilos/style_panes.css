@@ -309,3 +309,11 @@ tbody tr:hover {
     border-radius: 15px; /* Bordes redondeados en el video */
     bottom: 0;
 }
+
+
+.titu_harina{
+    margin-bottom: 40px;
+}
+.ind_harina{
+    margin-top: 20px;
+}

@@ -23,8 +23,9 @@
     position: relative;   
     height: 200px;
     background-image: var(--img);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     transition: 1.5;
     
 }
@@ -80,10 +81,13 @@
 }
 
 .tabla_panes .tar_pan .text_pan p {
+    margin-top: 2px;
     position: relative;
     opacity: 0;
     transition: 0.5s;
     color: #333;
+    width: 150px;
+    font-size: 13px;
 }
 
 .tabla_panes .tar_pan:hover .text_pan p {

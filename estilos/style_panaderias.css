@@ -70,10 +70,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
-    gap: 5px 20px; /* Espaciado entre columnas */
+    gap: 5px 10px; /* Espaciado entre columnas */
 }
 .pastelerias{
-    background-image: url(/assets/past1.jpg);
+    background-image: var(--imgen);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@
     border-radius: 30px;
     margin: 20px ;
     width: 300px; 
-
+ 
   
 }
 .webp{
@@ -125,12 +125,14 @@
 .ti_pas{
     color: rgb(0, 0, 0);
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.732); /* Sombra de texto */
+    font-size: 40px;
 
 }
 
 .past_titu{
     margin-top: 150px;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.785); /* Sombra de texto */
+
 }
 
 

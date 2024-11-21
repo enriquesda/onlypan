@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OnlyPan</title>
     <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/style_panes.css">
+    <link rel="stylesheet" href="./estilos/style_panaderias.css">
+    <link rel="icon" href="/assets/logop.png" type="image/x-icon">
+
 </head>
+
 <body>
-    <div class="barra-lateral "> <!--usaremos dos clases, una tiene el formato normal y la otra para cuando necesitemos que sea pequeña-->
-        
+    <div class="barra-lateral ">
+        <!--usaremos dos clases, una tiene el formato normal y la otra para cuando necesitemos que sea pequeña-->
+
         <div class="nombre-pagina">
-            <img  class="Original" id="cloud" src="/assets/logogrande.png" alt="" >
-            <img class="mini" id="cloud" src="/assets/logop.png" alt="" >
+            <img class="Original" id="cloud" src="/assets/logogrande.png" alt="">
+            <img class="mini" id="cloud" src="/assets/logop.png" alt="">
         </div>
 
         <button class="boton">
@@ -24,14 +31,14 @@
         <nav class="navegacion">
             <ul>
                 <li>
-                    <a  href="index.html">
+                    <a href="index.html">
                         <ion-icon name="bag-handle-outline"></ion-icon>
                         <span>Tienda</span>
                     </a>
                 </li>
 
                 <li>
-                    <a  id="Principal" href="panaderias.html">
+                    <a id="Principal" href="panaderias.html">
                         <ion-icon name="storefront-outline"></ion-icon>
                         <span>Panaderias</span>
                     </a>
@@ -83,20 +90,175 @@
     </div>
 
     <main class="contenedor-principal">
+        <section class="parallaxden bg">
+            <h1 class="past_titu revelar revelar_izq">¿Te llevamos el pan a casa?</h1>
+            <div class="fototext">
+                <form class="formulario revelar revelar_izq">
+                    <h4>Formulario Registro</h4>
+                    <input class="opcform" type="text" name="nombres" id="Empresa" placeholder="Nombre de la empresa">
+                    <input class="opcform" type="text" name="apellidos" id="Representante"
+                        placeholder="Nombre del representante">
+                    <input class="opcform" type="text" name="nombres" id="Identificacion"
+                        placeholder="Introduzca Cif o NIE">
+                    <input class="opcform" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                    <input class="opcform" type="password" name="correo" id="correo" placeholder="Ingrese su Correo">
+
+                    <label for="terminos" class="checkbox-label">
+                        <input type="checkbox" id="terminos">
+                        Estoy de acuerdo con <a href="#">Términos y Condiciones</a>
+                    </label>
+                    <input class="Dispara" type="reset" value="Registrarse" />
+                    <a href="#">¿Ya tengo Cuenta?</a>
+                </form>
+                <div class="video-container">
+                    <video class="video revelar revelar_der" autoplay muted loop>
+                        <source src="/assets/reparte.mp4" type="video/mp4">
+                    </video>
+                    <div class="video_texto revelar revelar_der">
+                        <h2 class="revelar">Tu pan en la puerta de cada portal.</h2>
+                        <p class="revelar ">Solo preocupate de darle el pan cada mañana a nuestros riders y ellos haran
+                            el trabajo por ti.Solo quedate mirando como tus ingresos suben.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        
+            <h1 class="past_titu revelar">Estas pastelerias que ya han dado el paso:</h1>
+            <div class="referencias">
+                <div class="pastelerias revelar revelar_izq">
+                    <h1 class="ti_pas">Revive</h1>
+                    <div>
+                        <iframe class="mapas"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.49821080638!2d-6.752969623740306!3d38.591401664700726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16c9f0d3cd1bd1%3A0x50f065ddf489cd8a!2sPanader%C3%ADa%20Pasteler%C3%ADa%20Revive!5e0!3m2!1ses!2ses!4v1732189205064!5m2!1ses!2ses"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="webp">
+                        <a href="https://panaderiapasteleriarevive.com/" target="_blank">Mas informacion</a>
+                    </div>
+                    <p class="desc" >Panaderia familiar situadasdasda dasd asdasd asdasdas dasd as d</p>
+                </div>
+
+                <div class="pastelerias revelar revelar_izq">
+                    <h1 class="ti_pas">Revive</h1>
+                    <div>
+                        <iframe class="mapas"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.49821080638!2d-6.752969623740306!3d38.591401664700726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16c9f0d3cd1bd1%3A0x50f065ddf489cd8a!2sPanader%C3%ADa%20Pasteler%C3%ADa%20Revive!5e0!3m2!1ses!2ses!4v1732189205064!5m2!1ses!2ses"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="webp">
+                        <a href="https://panaderiapasteleriarevive.com/" target="_blank">Mas informacion</a>
+                    </div>
+                    <p class="desc" >Panaderia familiar situadasdasda dasd asdasd asdasdas dasd as d</p>
+                </div>
+
+                <div class="pastelerias revelar revelar_der">
+                    <h1 class="ti_pas">Revive</h1>
+                    <div>
+                        <iframe class="mapas"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.49821080638!2d-6.752969623740306!3d38.591401664700726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16c9f0d3cd1bd1%3A0x50f065ddf489cd8a!2sPanader%C3%ADa%20Pasteler%C3%ADa%20Revive!5e0!3m2!1ses!2ses!4v1732189205064!5m2!1ses!2ses"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="webp">
+                        <a href="https://panaderiapasteleriarevive.com/" target="_blank">Mas informacion</a>
+                    </div>
+                    <p class="desc" >Panaderia familiar situadasdasda dasd asdasd asdasdas dasd as d</p>
+                </div>
+
+                <div class="pastelerias revelar revelar_der">
+                    <h1 class="ti_pas">Revive</h1>
+                    <div>
+                        <iframe class="mapas"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.49821080638!2d-6.752969623740306!3d38.591401664700726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16c9f0d3cd1bd1%3A0x50f065ddf489cd8a!2sPanader%C3%ADa%20Pasteler%C3%ADa%20Revive!5e0!3m2!1ses!2ses!4v1732189205064!5m2!1ses!2ses"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="webp">
+                        <a href="https://panaderiapasteleriarevive.com/" target="_blank">Mas informacion</a>
+                    </div>
+                    <p class="desc" >Panaderia familiar situadasdasda dasd asdasd asdasdas dasd as d</p>
+                </div>
+
+                <div class="pastelerias revelar revelar_izq">
+                    <h1 class="ti_pas">Revive</h1>
+                    <div>
+                        <iframe class="mapas"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.49821080638!2d-6.752969623740306!3d38.591401664700726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16c9f0d3cd1bd1%3A0x50f065ddf489cd8a!2sPanader%C3%ADa%20Pasteler%C3%ADa%20Revive!5e0!3m2!1ses!2ses!4v1732189205064!5m2!1ses!2ses"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="webp">
+                        <a href="https://panaderiapasteleriarevive.com/" target="_blank">Mas informacion</a>
+                    </div>
+                    <p class="desc" >Panaderia familiar situadasdasda dasd asdasd asdasdas dasd as d</p>
+                </div>
+
+                
+                <div class="pastelerias revelar revelar_izq">
+                    <h1 class="ti_pas">Revive</h1>
+                    <div>
+                        <iframe class="mapas"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.49821080638!2d-6.752969623740306!3d38.591401664700726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16c9f0d3cd1bd1%3A0x50f065ddf489cd8a!2sPanader%C3%ADa%20Pasteler%C3%ADa%20Revive!5e0!3m2!1ses!2ses!4v1732189205064!5m2!1ses!2ses"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="webp">
+                        <a href="https://panaderiapasteleriarevive.com/" target="_blank">Mas informacion</a>
+                    </div>
+                    <p class="desc" >Panaderia familiar situadasdasda dasd asdasd asdasdas dasd as d</p>
+                </div>
+
+                
+                <div class="pastelerias revelar revelar_der">
+                    <h1 class="ti_pas">Revive</h1>
+                    <div>
+                        <iframe class="mapas"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.49821080638!2d-6.752969623740306!3d38.591401664700726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16c9f0d3cd1bd1%3A0x50f065ddf489cd8a!2sPanader%C3%ADa%20Pasteler%C3%ADa%20Revive!5e0!3m2!1ses!2ses!4v1732189205064!5m2!1ses!2ses"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="webp">
+                        <a href="https://panaderiapasteleriarevive.com/" target="_blank">Mas informacion</a>
+                    </div>
+                    <p class="desc" >Panaderia familiar situadasdasda dasd asdasd asdasdas dasd as d</p>
+                </div>
+
+                
+                <div class="pastelerias revelar revelar_der">
+                    <h1 class="ti_pas">Revive</h1>
+                    <div>
+                        <iframe class="mapas"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.49821080638!2d-6.752969623740306!3d38.591401664700726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16c9f0d3cd1bd1%3A0x50f065ddf489cd8a!2sPanader%C3%ADa%20Pasteler%C3%ADa%20Revive!5e0!3m2!1ses!2ses!4v1732189205064!5m2!1ses!2ses"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="webp">
+                        <a href="https://panaderiapasteleriarevive.com/" target="_blank">Mas informacion</a>
+                    </div>
+                    <p class="desc" >Panaderia familiar situadasdasda dasd asdasd asdasdas dasd as d</p>
+                </div>
+                
+            </div>
+        </section>
+
         <section class="no-parallax">
-            <h1>¿Eres una panaderia?</h1>
-          </section>
-          <section class="parallax bg">
-            <h1>Esto solo es el comienzo de una gran proyecto Nacho!</h1>
-          </section>
-          <section class="no-parallax">
             <h1>....aun queda lo mejor</h1>
-          </section>
-    
+        </section>
+
     </main>
+
+    <script src="xdev.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script src="scroll.js"></script>
+
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

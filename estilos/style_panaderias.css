@@ -1,6 +1,6 @@
 .formulario {
     width: 400px;
-    background: rgb(255, 255, 255) ;
+    background: rgb(255, 255, 255);
     padding: 30px;
     margin: auto;
     border-radius: 20px;
@@ -41,7 +41,8 @@
 }
 
 .formulario a:hover {
-    color:  rgb(70, 45, 0);;
+    color: rgb(70, 45, 0);
+    ;
     text-decoration: underline;
 }
 
@@ -61,18 +62,21 @@
     background-color: rgb(164, 85, 12);
 }
 
-.mapas{
+.mapas {
     border-radius: 20px;
     align-items: center;
     justify-content: center;
 }
-.referencias{
+
+.referencias {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
-    gap: 5px 10px; /* Espaciado entre columnas */
+    gap: 5px 10px;
+    /* Espaciado entre columnas */
 }
-.pastelerias{
+
+.pastelerias {
     background-image: var(--imgen);
     background-size: cover;
     background-position: center;
@@ -82,36 +86,41 @@
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    margin: 20px ;
-    width: 300px; 
- 
-  
+    margin: 20px;
+    width: 300px;
+
+
 }
-.webp{
+
+.webp {
     background-color: rgb(121, 67, 0);
     border-radius: 10px;
     padding: 10px 50px;
-    margin:15px; 
+    margin: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición para color y escalado */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Transición para color y escalado */
 
 
 }
-.webp:hover{
+
+.webp:hover {
     background-color: rgb(180, 118, 43);
     transform: scale(1.05);
 }
 
 .webp a {
-    color: inherit; 
+    color: inherit;
     font-size: 20px;
-    text-decoration: none; 
+    text-decoration: none;
 }
+
 .webp a:visited {
     color: inherit;
     text-decoration: none;
 }
-.desc{
+
+.desc {
     text-align: center;
     border-radius: 10px;
     padding: 5px;
@@ -122,17 +131,127 @@
     font-size: 15px;
     background-color: rgba(255, 255, 255, 0.462);
 }
-.ti_pas{
+
+.ti_pas {
     color: rgb(0, 0, 0);
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.732); /* Sombra de texto */
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.732);
+    /* Sombra de texto */
     font-size: 40px;
 
 }
 
-.past_titu{
+.past_titu {
     margin-top: 150px;
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.785); /* Sombra de texto */
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.785);
+    /* Sombra de texto */
 
 }
 
+.marcos_transp {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
 
+
+/*marcos con hober*/
+.marcos_transp figure {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 300px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.marcos_transp figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+
+.marcos_transp figure .marco_seve {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    visibility: visible;
+    /* Visible por defecto */
+    opacity: 1;
+    /* Visible al principio */
+    transition: all 400ms ease-out;
+}
+
+.marcos_transp figure:hover>.marco_seve {
+    opacity: 0;
+    /* Desaparece al hacer hover */
+    visibility: hidden;
+    /* Lo oculta completamente tras la transición */
+    transition: all 400ms ease-out;
+}
+
+.marcos_transp figure .marco_seve h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.807);
+    font-size: 44px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.marcos_transp figure .text_marco {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.marcos_transp figure:hover>.text_marco {
+    opacity: 1;
+    visibility: visible;
+}
+
+.marcos_transp figure:hover>img {
+    transform: scale(1.3);
+}
+
+.marcos_transp figure .text_marco h3 {
+    color: #fff;
+    font-weight: 400;
+    margin: 70px 0 15px;
+    transition: all 400ms ease-out;
+}
+
+.marcos_transp figure .text_marco p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 220px;
+    margin: auto;
+}
+
+.h1mar {
+    margin-top: 300px;
+    margin-bottom: 100px;
+
+}
+
+.h1mar {
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+}

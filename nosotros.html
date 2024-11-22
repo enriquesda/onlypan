@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OnlyPan</title>
     <link rel="stylesheet" href="./estilos/style.css">
-    <link rel="icon" href="/assets/logop.png" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos/style_panes.css">
+    <link rel="stylesheet" href="./estilos/style_panaderias.css">
+    <link rel="stylesheet" href="./estilos/style_nosotros.css">
+    <link rel="icon" href="/assets/logop.png" type="image/x-icon">    <link rel="icon" href="/assets/logop.png" type="image/x-icon">
 
 </head>
+
 <body>
-    <div class="barra-lateral "> <!--usaremos dos clases, una tiene el formato normal y la otra para cuando necesitemos que sea pequeña-->
-        
+    <div class="barra-lateral ">
+        <!--usaremos dos clases, una tiene el formato normal y la otra para cuando necesitemos que sea pequeña-->
+
         <div class="nombre-pagina">
-            <img  class="Original" id="cloud" src="/assets/logogrande.png" alt="" >
-            <img class="mini" id="cloud" src="/assets/logop.png" alt="" >
+            <img class="Original" id="cloud" src="/assets/logogrande.png" alt="">
+            <img class="mini" id="cloud" src="/assets/logop.png" alt="">
         </div>
 
         <button class="boton">
@@ -26,14 +32,14 @@
         <nav class="navegacion">
             <ul>
                 <li>
-                    <a  href="index.html">
+                    <a href="index.html">
                         <ion-icon name="bag-handle-outline"></ion-icon>
                         <span>Tienda</span>
                     </a>
                 </li>
 
                 <li>
-                    <a   href="panaderias.html">
+                    <a href="panaderias.html">
                         <ion-icon name="storefront-outline"></ion-icon>
                         <span>Panaderias</span>
                     </a>
@@ -85,20 +91,103 @@
     </div>
 
     <main class="contenedor-principal">
+        
+
         <section class="no-parallax">
-            <h1>Nosotros solo estamos para quitarle miga al asunto</h1>
-          </section>
-          <section class="parallax bg">
-            <h1>Esto solo es el comienzo de una gran proyecto Nacho!</h1>
-          </section>
-          <section class="no-parallax">
-            <h1>....aun queda lo mejor</h1>
-          </section>
-    
+            <h1>Este es nuestro equipo:</h1>
+            <div class="fototext_avc">   
+                <div class="marcos_transp_nosotros revelar">
+                    <a href="#">
+                        <figure>
+                            <img src="/assets/perf2.jpg"
+                                alt="Imagen con Efecto Hover">
+                        </figure>
+                    </a>
+                </div>
+                <div class="texto revelar revelar_der">
+                    <h2 class="revelar">Enrique(El tikismikis)</h2>
+                    <p class="revelar ">Es el encargado de que todo salga bien .... quizas tiene que salir muy bien para que pase por su filtro.Es el director de Onlypan y el encargado de la direcion de la empresa.
+
+                    </p>
+                </div>
+            </div>
+            <div class="fototext_avc">   
+                
+                <div class="texto revelar revelar_der">
+                    <h2 class="revelar">Andrea (La Creativa)</h2>
+                    <p class="revelar">
+                        Es la encargada de que cada diseño sea único y memorable. Con su estilo inconfundible, Andrea da vida a las ideas de nuestros clientes y las convierte en obras maestras.
+                    </p>
+                </div>
+                <div class="marcos_transp_nosotros revelar">
+                    <a href="#">
+                        <figure>
+                            <img src="/assets/perf1.jpg" alt="Imagen de Diseñadora">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="fototext_avc">   
+                <div class="marcos_transp_nosotros revelar">
+                    <a href="#">
+                        <figure>
+                            <img src="/assets/perf5.jpg" alt="Imagen de Influencer">
+                        </figure>
+                    </a>
+                </div>
+                <div class="texto revelar revelar_der">
+                    <h2 class="revelar">Laura (La Influencer)</h2>
+                    <p class="revelar">
+                        Conecta con miles de personas a diario mostrando la esencia de nuestra marca. Laura sabe cómo transmitir emociones y crear tendencia en cada post.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="fototext_avc">   
+                
+                <div class="texto revelar revelar_der">
+                    <h2 class="revelar">Carlos (El Estratega)</h2>
+                    <p class="revelar">
+                        Nuestro comercial estrella. Carlos domina el arte de negociar y siempre encuentra la manera de ofrecer la solución perfecta a nuestros clientes.
+                    </p>
+                </div>
+                <div class="marcos_transp_nosotros revelar">
+                    <a href="#">
+                        <figure>
+                            <img src="/assets/perf3.jpg" alt="Imagen de Comercial">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="fototext_avc">   
+                <div class="marcos_transp_nosotros revelar">
+                    <a href="#">
+                        <figure>
+                            <img src="/assets/perf4jpg.jpg" alt="Imagen de Representante de Marketing">
+                        </figure>
+                    </a>
+                </div>
+                <div class="texto revelar revelar_der">
+                    <h2 class="revelar">Sofía (La Estratega)</h2>
+                    <p class="revelar">
+                        La mente detrás de nuestras campañas más exitosas. Sofía utiliza su conocimiento en marketing para llevar nuestra marca a nuevos horizontes.
+                    </p>
+                </div>
+            </div>
+            
+        </section>
     </main>
+    <script src="xdev.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script src="scroll.js"></script>
+
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

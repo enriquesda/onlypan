@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OnlyPan</title>
     <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/style_panes.css">
+    <link rel="stylesheet" href="./estilos/style_panaderias.css">
     <link rel="icon" href="/assets/logop.png" type="image/x-icon">
 
 </head>
@@ -26,21 +28,21 @@
         <nav class="navegacion">
             <ul>
                 <li>
-                    <a  href="index.html">
+                    <a href="index.html">
                         <ion-icon name="bag-handle-outline"></ion-icon>
                         <span>Tienda</span>
                     </a>
                 </li>
 
                 <li>
-                    <a   href="panaderias.html">
+                    <a href="panaderias.html">
                         <ion-icon name="storefront-outline"></ion-icon>
                         <span>Panaderias</span>
                     </a>
                 </li>
 
                 <li>
-                    <a  href="panes.html">
+                    <a href="panes.html">
                         <ion-icon name="pizza-outline"></ion-icon>
                         <span>Panes</span>
                     </a>
@@ -61,7 +63,7 @@
                 </li>
 
                 <li>
-                    <a href="ayuda.html">
+                    <a  href="ayuda.html">
                         <ion-icon name="warning-outline"></ion-icon>
                         <span>Ayuda</span>
                     </a>
@@ -86,16 +88,46 @@
 
     <main class="contenedor-principal">
         <section class="no-parallax">
-            <h1>Aqui hay miga....</h1>
-          </section>
-          <section class="parallax bg">
-            <h1>Esto solo es el comienzo de una gran proyecto Nacho!</h1>
-          </section>
-          <section class="no-parallax">
-            <h1>....aun queda lo mejor</h1>
-          </section>
-    
+            <h1 class="past_titu revelar revelar_izq">¿Quieres ser uno de nuestros distribuidores?</h1>
+            <div class="fototext">
+                <form class="formulario revelar revelar_izq">
+                    <h4>Contacta con nosotros</h4>
+                    <input class="opcform" type="text" name="nombres" id="Empresa" placeholder="Nombre ">
+                    <input class="opcform" type="text" name="apellidos" id="Representante"
+                        placeholder="Apellido">
+                    <input class="opcform" type="text" name="nombres" id="Identificacion"
+                        placeholder="DNI">
+                    <input class="opcform" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                    <input class="opcform" type="password" name="correo" id="correo" placeholder="Ingrese una contraseña">
+
+                    <label for="terminos" class="checkbox-label">
+                        <input type="checkbox" id="terminos">
+                        Estoy de acuerdo con <a href="#">Términos y Condiciones</a>
+                    </label>
+                    <input class="Dispara" type="reset" value="Enviar" />
+                </form>
+                <div class="video-container">
+                    <video class="video revelar revelar_der" autoplay muted loop>
+                        <source src="/assets/reparte.mp4" type="video/mp4">
+                    </video>
+                    <div class="video_texto revelar revelar_der">
+                        <h2 class="revelar">Tu pan en la puerta de cada portal.</h2>
+                        <p class="revelar ">Solo preocupate de darle el pan cada mañana a nuestros riders y ellos haran
+                            el trabajo por ti.Solo quedate mirando como tus ingresos suben.</p>
+                    </div>
+                </div>
+
+
+            </div>
+          </section>    
     </main>
+
+
+    <script src="xdev.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script src="scroll.js"></script>
+
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

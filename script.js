@@ -4,7 +4,13 @@ const spans=document.querySelectorAll("span");//selecionamos todos los span
 const main =document.querySelector("main");
 const Original=document.querySelector(".Original");
 const mini=document.querySelector(".mini");
+// Selecciona el botón por su clase
+const boton = document.querySelector('.barra-lateral .boton');
 
+// Añade un evento de clic al botón
+boton.addEventListener('click', () => {
+    window.alert("Los pedidos llegarán próximamente");
+});
 cloud.addEventListener("click",()=>{
     barraLateral.classList.toggle("mini-barra-lateral"); //al hacer clic sustituiremos el formato normal de barra lateral por el de mini barra lateral y lo mismo al reves
     main.classList.toggle("minmain");

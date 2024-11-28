@@ -4,25 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnlyPan</title>
+    <title>OnlyPan</title> 
     <link rel="stylesheet" href="./estilos/style.css">
     <link rel="stylesheet" href="./estilos/style_panes.css">
+
+    <!-- poner logo en la pestaña superior en la página. -->
     <link rel="icon" href="/assets/logop.png" type="image/x-icon">
+
+        <!-- Enlace a la biblioteca de iconos FontAwesome desde un CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-
+<!-- -->
 <body>
+        <!-- Barra lateral que contiene el menú de navegación y la información del usuario -->
     <div class="barra-lateral ">
-        <!--usaremos dos clases, una tiene el formato normal y la otra para cuando necesitemos que sea pequeña-->
 
+        <!--usaremos dos clases, una tiene el formato normal y la otra para cuando necesitemos que sea pequeña-->
         <div class="nombre-pagina">
             <img class="Original" id="cloud" src="/assets/logogrande.png" alt="">
             <img class="mini" id="cloud" src="/assets/logop.png" alt="">
         </div>
 
+        <!-- Botón para crear un pedido -->
         <button class="boton">
 
             <ion-icon name="add-outline"></ion-icon>
@@ -30,8 +36,10 @@
 
         </button>
 
+        <!-- Menú de navegación -->
         <nav class="navegacion">
             <ul>
+                 <!-- Enlaces a distintas páginas del sitio web -->
                 <li>
                     <a id="Principal" href="index.html">
                         <ion-icon name="bag-handle-outline"></ion-icon>
@@ -71,29 +79,40 @@
             </ul>
         </nav>
 
+
+        <!-- Línea divisoria decorativa -->
         <div class="linea"></div>
+
+        <!-- Información del usuario -->
         <div class="usuario">
-            <img src="alicia.jpg" alt="">
+            <img src="alicia.jpg" alt=""><!-- Imagen de perfil -->
+            <!--Contenedor con los detalles del usuario-->
             <div class="info-usuario">
                 <div class="datos-usuario">
                     <span class="nombre">Alicia</span>
                     <span class="email">alicia@gmail.com</span>
                 </div>
-                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon><!-- Icono de opciones -->
             </div>
         </div>
 
     </div>
 
+    <!-- Contenido principal de la página -->
     <main class="contenedor-principal">
+
+        <!-- Sección con efecto parallax -->
         <section class="parallax bg">
             <img class="fotopara" src="/assets/intro.png" alt="">
         </section>
+
+        <!-- Sección estática con un carrusel de imágenes -->
         <section class="no-parallax ">
             <div class="container">
                 <div class="slide">
 
-                    <div class="item" style="background-image: url(./assets/car4.webp);">
+                    <!-- Elementos individuales del carrusel -->
+                    <div class="item" style="background-image: url(./assets/car4.webp);"><!-- Añado las imagenes que necesita para evitar hacer mas div -->
                         <div class="content">
                             <div class="name">Unico pago mensual</div>
                             <div class="des">Como cualquier supcricion olvidate de los pagos , a final de mes se te
@@ -127,6 +146,7 @@
 
                 </div>
 
+                 <!-- Botones para navegar en el carrusel -->
                 <div class="button">
                     <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
                     <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
@@ -134,15 +154,22 @@
 
             </div>
         </section>
+
+
+        <!-- Más secciones con contenido parallax y no parallax -->
         <section class="parallaxden bg">
             <h1 class="revelar">¿Como funciona?</h1>
             <div class="fototext">
+
+                 <!-- Texto e imagen alineados -->
                 <div class="texto revelar revelar_izq">
                     <h2 class="revelar">Muy sencillo empecemos eligiendo que pan quieres.</h2>
                     <p class="revelar ">Nosotros te mostramos nuestra amplia sección de panes que disponemos.
                         <br>Que dias los quieres y simplemente a final de mes se carga tu cuota.
                     </p>
                 </div>
+
+                <!-- Añadimos una  imagen -->
                 <div class=" revelar revelar_der">
                     <a href="#">
                         <img class="sombra" src="/assets/panes.png" alt="">
@@ -151,17 +178,20 @@
             </div>
         </section>
 
+        <!--Sección sin parallax en la cual simplemente aparece un fondo plano -->
         <section class="no-parallax">
             <h1 class="titu_harina revelar revelar_izq">¿Cuando lo quieres?</h1>
+
+            <!--Contenedor con foto y textos como el anterior -->
             <div class="fototext">
 
-
+                <!--Al igual que en la anterior muestra una imagen -->
                 <div class=" revelar revelar_izq">
                     <a href="#">
                         <img class="sombra" src="/assets/camion.png" alt="">
                     </a>
                 </div>
-
+                 <!--Parte del contenedor con texto -->
                 <div class="texto revelar revelar_der">
                     <h2 class="revelar">Ya sabes que pan quieres, ¿Pero cuando lo quieres?.</h2>
                     <p class="revelar ">Puedes programar los envíos para los días que quieras y en la franja de hora que
@@ -175,8 +205,11 @@
             </div>
         </section>
 
+        <!--Contenedor con parallax editado para poder introducir contenido dentro de él -->
         <section class="parallaxden bg">
             <h1 class="revelar">Que no se te olvide en esos días especiales.</h1>
+
+            <!--Funciona igual que los otros 3 contenedores-->
             <div class="fototext">
                 <div class="texto revelar revelar_izq">
                     <h2 class="revelar">Tranquilo nosotros también somos unos despistados</h2>
@@ -192,7 +225,7 @@
                 </div>
             </div>
         </section>
-
+        <!--Section con sin parallax como las anteriores-->
         <section class="no-parallax">
             <h1 class="revelar revelar_der">Simplicidad de pago</h1>
             <div class="fototext">
@@ -212,15 +245,14 @@
 
 
     </main>
-    <script src="xdev.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
-    <script src="scroll.js"></script>
-
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="script.js"></script>
+    <!-- Scripts de funcionalidad -->
+    <script src="xdev.js"></script><!-- Archivo de funcionalidades locales -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script><!-- Biblioteca GSAP -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script><!-- GSAP ScrollTrigger -->
+    <script src="scroll.js"></script><!-- Archivo personalizado para efectos de scroll -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script><!-- Necesario para los iconos -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script><!-- Necesario para los iconos -->
+    <script src="script.js"></script><!-- Archivo principal de scripts -->
 </body>
 
 </html>

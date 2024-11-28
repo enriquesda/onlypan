@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Outfit:wght@100..900&display=swap');
+/*Importo la fuente de letras que utilizo*/
 
 :root {
     /* Utilizo unas variables con los colores que usare en un futuro para que me sea mas comodo*/
-    --color-barra-lateral: rgb(255, 255, 255);
+    --color-barra-lateral: rgb(255, 255, 255);/* Fondo de la barra lateral */
 
-    --color-texto: rgb(124, 56, 0);
-    --color-texto-menu: rgb(68, 39, 1);
+    --color-texto: rgb(124, 56, 0);/* Color general del texto */
+    --color-texto-menu: rgb(68, 39, 1); /* Color del texto del menú */
 
-    --color-boton: rgb(70, 45, 0);
-    --color-boton-texto: rgb(255, 255, 255);
+    --color-boton: rgb(70, 45, 0);/* Fondo de los botones */
+    --color-boton-texto: rgb(255, 255, 255);/* Texto de los botones */
 
-    --color-texto: rgb(124, 56, 0);
-    --color-texto-menu: rgb(68, 39, 1);
-
-    --color-nav: rgb(207, 140, 85);
-    --color-nav-texto: rgb(70, 35, 3);
+    --color-nav: rgb(207, 140, 85);/*Color del menu de navegación*/
+    --color-nav-texto: rgb(70, 35, 3);/*Color del texto  menu de navegación*/
 }
 
+/* Conjunto de estilos y ajuste de box-sizing */
 * {
     margin: 0;
     padding: 0;
@@ -25,20 +24,17 @@
 }
 
 body {
-    height: 100vh;
-    /*Nos ocupa toda la altura de la pagina*/
-    width: 100%;
+    height: 100vh; /*Nos ocupa toda la altura de la pagina*/
+    width: 100%;/* Ocupa todo el ancho disponible */
     background-color: rgb(245, 209, 155);
-    font-family: "Outfit", sans-serif;
+    font-family: "Outfit", sans-serif;/* Fuente general */
 }
-
+  /* Configuración de estilo para párrafos */
 p {
     width: 400px;
     font-size: 20px;
     height: 200px;
-    box-sizing: content-box;
-    /*border: red 2px solid;*/
-
+    box-sizing: content-box; /* Calcula ancho/alto sin incluir padding ni bordes */
 }
 
 /*este codigo sera para el margen superior de la pagina*/
@@ -47,20 +43,20 @@ p {
     /*hace que siempre se muestre fija en esa posicion*/
     width: 300px;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden;    /*cualquier contenido que sobresalga de las dimensiones especificadas del elemento quedará oculto y no será visible.*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*cualquier contenido que sobresalga de las dimensiones especificadas del elemento quedará oculto y no será visible.*/
     padding: 20px 15px;
     background-color: var(--color-barra-lateral);
     transition: width 0.5s ease;
 }
-
+/*Ajusta el margen cuando se hace el menu pequeño*/
 .mini-barra-lateral {
     width: 80px;
 }
 
+/*Estilo de las etiqueta span que pertenece a la clase barra-lateral*/
 .barra-lateral span {
     width: 100px;
     white-space: nowrap;
@@ -70,12 +66,13 @@ p {
     opacity: 1;
     transition: opacity 0.5s ease, width 0.5s ease;
 }
-
+/*Lo llamara css para ocultar cuando se minimice la barra de navegacion */
 .barra-lateral span.oculto {
-    opacity: 0;
-    width: 0;
+    opacity: 0; /* Invisible */
+    width: 0;/* Ocupa cero espacio */
 }
 
+/*Contendor en el que se encuentran los logos de la empresa, que ese muestran en el menu de navegación*/
 .barra-lateral .nombre-pagina {
     width: 100%;
     height: 45px;
@@ -84,40 +81,35 @@ p {
     align-items: center;
 }
 
-
+/*Damos formato a la logo grande y que se muestra originalmente*/
 .barra-lateral .nombre-pagina .Original {
     width: 200px;
-    cursor: pointer;
+    cursor: pointer;/*Hacemos que cambie el cursor para simular que es un botón*/
     margin-top: 20px;
-    margin-right: 200px;
+    margin-right: 200px;/*margen tan largo para empujar fuera de la vista el logo pequeño*/
     margin-left: 40px;
-    transition: opacity 0.5s ease, width 0.5s ease;
+    transition: opacity 0.5s ease, width 0.5s ease;/*hacemos que la transición cuando se escuenda sea mas natural*/
 }
 
+/*formato para el logo original cuando necesitamos que se oculte */
 .barra-lateral .nombre-pagina .Original.esconder {
-    width: 0px;
-    opacity: 0;
+    width: 0px;/*Reducimos su tamaño a 0 para hacerlo desaparecer*/
+    opacity: 0;/*lo hacemos invisible*/
     cursor: pointer;
     margin-top: 10px;
-    margin-right: 0px;
+    margin-right: 0px;/*al reducirlo aparecera el logo pequeño*/
     margin-left: 0px;
 }
 
+/*Damos formato a la logo pequeño*/
 .barra-lateral .nombre-pagina .mini {
     width: 50px;
-    min-height: 40px;
+    min-height: 40px;/*Con esto aseguramos una tamaño de altura minimo*/
     cursor: pointer;
     margin-top: 10px;
 }
 
-.barra-lateral .nombre-pagina span {
-    margin-left: 5px;
-    font-size: 25px;
-}
-
-
 /*Este codigo sera para el boton*/
-
 .barra-lateral .boton {
     width: 100%;
     height: 45px;
@@ -125,62 +117,68 @@ p {
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     gap: 8px; /* Espacio entre el ícono y el texto */
-    border: none;
-    border-radius: 10px;
+    border: none;/*Eliminamos el borde el botón*/
+    border-radius: 10px;/*redondeamos las esquinas del botón*/
     background-color: var(--color-boton);
     color: var(--color-boton-texto);
     margin-bottom: 20px;
-    cursor: pointer;
+    cursor: pointer;/*Cambiamos el cursor*/
 }
+
+/*Formato para le texto del botón*/
 .barra-lateral .boton span {
    width: auto;
 }
 
+/*Formato para le icono del botón*/
 .barra-lateral .boton ion-icon {
-    min-width: 50px;
-    min-height: 25px;
+    min-width: 50px;/*Tamaño minimo en anchura*/
+    min-height: 25px;/*Tamaño minimo en altura*/
 }
 
 /*Menu de navegacion*/
 
+/*Nos indica el apartado del menu de navegación donde nos encotramos*/
 #Principal {
 
     background-color: var(--color-nav);
     color: var(--color-nav-texto);
 }
-
+/* Formato para los elementos del menu de navegación */
 .barra-lateral .navegacion li {
-    list-style: none;
+    list-style: none;/* Elimina las viñetas */
     display: flex;
     margin-bottom: 5px;
 }
 
+/*Formato para los enlaces dentro del menu*/
 .barra-lateral .navegacion a {
-
     width: 100%;
     height: 45px;
-    display: flex;
+    display: flex;/*necesario para colocar el icono y texto que contiene*/
     align-items: center;
-    text-decoration: none;
-    border-radius: 10px;
+    text-decoration: none;/*Eliminamos la decoración que trae por defecto los enlaces*/
+    border-radius: 10px;/*Redendeo que se apreciara en el hover*/
     color: var(--color-texto-menu);
     background-color: var(--color-barra-lateral);
     transition: background-color 0.5s ease, color 0.5s ease;
 
 }
 
+/*Añadir efeto a los enlaces del menu cuando pase le raton por encima*/
 .barra-lateral .navegacion a:hover {
     background-color: var(--color-nav);
     color: var(--color-nav-texto);
 }
 
+/*Estilos de los iconos del menu*/
 .barra-lateral .navegacion ion-icon {
     min-width: 50px;
     font-size: 20px;
 }
 
 
-/*Linea*/
+/*Linea decorativa para separar seciones*/
 .barra-lateral .linea {
     width: 200 px;
     height: 3px;
@@ -189,63 +187,69 @@ p {
 }
 
 /*Informacion de usuario*/
+
+/*Damos formato al contenedor donde aparecera la información del usuario*/
 .barra-lateral .usuario {
     width: 100%;
     display: flex;
 }
 
+/*Formato para la imagen del usuario*/
 .barra-lateral .usuario img {
-
     width: 60px;
     min-width: 60px;
     border-radius: 10px;
 }
 
+/*formato para el contenedor que tiene la información del usuario*/
 .barra-lateral .usuario .info-usuario {
     width: 100%;
     display: flex;
     flex-direction: row;
-
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    /* Distribuye el espacio entre los elementos hijos uniformemente */
     color: var(--color-nav-texto);
-    overflow: hidden;
+    overflow: hidden;/* Oculta cualquier contenido que desborde los límites del contenedor */
 }
 
+/*Formato para la parte que contiene los datos del usuario*/
 .barra-lateral .usuario .datos-usuario {
     width: 100%;
-    display: flex;
+    display: flex;/*Nos serivira para colocar los atributos que este contiene*/
     flex-direction: column;
     margin-left: 5px;
 }
 
+/*Estilo del nombre que tiene el usuario*/
 .barra-lateral .usuario .nombre {
     font-size: 25px;
-    font-weight: 600;
-
+    font-weight: 600; /* Define un grosor medio-alto para el texto, equivalente a "semibold" */
 }
 
+/*Estilo para el correo electronico del usuario*/
 .barra-lateral .usuario .email {
     font-size: 20px;
 }
 
+/*Ajustamos el tamaño del icono del usuario*/
 .barra-lateral .usuario ion-icon {
     font-size: 30px;
 }
 
-
 /*Contenido principal de la pagina*/
+
 main {
     margin-left: 300px;
     transition: margin-left 0.5s;
-    height: 100vh;
-    perspective: 2px;
-    transform-style: preserve-3d;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    height: 100vh; /* Establece la altura del contenedor principal igual a la altura de la ventana */
+    perspective: 2px;/* Crea un efecto de perspectiva para animaciones 3D */
+    transform-style: preserve-3d;/* Mantiene el estilo 3D de los elementos hijos */
+    overflow-x: hidden;/* Oculta el contenido desbordado horizontalmente */
+    overflow-y: scroll;/* Habilita el scroll vertical */
     
 }
 
+/*Nos desplaza el contenido cuando minimizamos la barra de navegacion*/
 main.minmain {
     margin-left: 80px;
 }

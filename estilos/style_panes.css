@@ -1,12 +1,14 @@
-
+/* Contenedor principal de los tipos de panes */
 .tabla_panes{
-    position: relative;
+    position: relative;/* Posicionamiento relativo para posibles ajustes internos */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     gap: 20px;
     padding: 20px;
 }
+
+/* Tarjetas individuales de los tipos de pan */
 .tabla_panes .tar_pan{
     position: relative;
     width: 200px;
@@ -14,16 +16,16 @@
     background: #fff;
     border-radius: 40px;
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
-    transition: 0.5s;
+    transition: 0.5s;/* Transición suave en cambios de estilo */
     overflow: hidden;
 }
 
-
+/* Imagen dentro de cada tarjeta */
 .tabla_panes .tar_pan .imgpan {
-    position: relative;   
+    position: relative;/* Posicionamiento relativo para ajustes internos */
     height: 200px;
-    background-image: var(--img);
-    background-size: cover;
+    background-image: var(--img);/* Imagen dinámica a través de la variable CSS */
+    background-size: cover;/* La imagen cubre completamente el área */
     background-position: center;
     background-repeat: no-repeat;
     transition: 1.5;
@@ -31,8 +33,11 @@
 }
 
 
+/*En los dos siguientes pinto la parte blanca de las etiquetas */
+
+/* Elemento decorativo en la parte inferior de la imagen de las etiquetas de panes */
 .tabla_panes .tar_pan .imgpan::before {
-    content: "";
+    content: "";/* Contenido vacío para crear un efecto decorativo */
     position: absolute;
     bottom: -40px;
     width: 100%;
@@ -42,6 +47,7 @@
     transition: 0.5s;
 }
 
+/* Elemento decorativo en la parte superior de la imagen de las etiquetas de panes */
 .tabla_panes .tar_pan .imgpan::after{
     content: "";
     position: absolute;
@@ -55,16 +61,16 @@
     transition: 0.5s;   
 }
 
-
+/* Contenedor de texto en la tarjeta */
 .tabla_panes .tar_pan .text_pan {
    position: relative;
    top: -30px;
    z-index: 10;
-   padding: 0 30px;
+   padding: 0 30px;/* Asegura que esté encima de otros elementos */
    transition: 0.5s;
 }
 
-
+/* Estilo del título en la tarjeta */
 .tabla_panes .tar_pan .text_pan h3{
     position: relative;
     font-size: 0,6em;
@@ -72,6 +78,7 @@
 
 }
 
+/* Subtítulo decorativo en la tarjeta */
 .tabla_panes .tar_pan .text_pan span {
     position: absolute;
     bottom: -15px;
@@ -80,37 +87,44 @@
     opacity: 0.75;
 }
 
+/* Estilo del párrafo en la tarjeta */
 .tabla_panes .tar_pan .text_pan p {
     margin-top: 2px;
     position: relative;
-    opacity: 0;
+    opacity: 0;/* Hace invisible el párrafo */
     transition: 0.5s;
     color: #333;
     width: 150px;
     font-size: 13px;
 }
 
+/* Efecto hover para revelar el párrafo */
 .tabla_panes .tar_pan:hover .text_pan p {
-    opacity: 1;
+    opacity: 1;/* Hace visible el párrafo */
 }
+
+/* Movimiento del contenedor de texto al pasar el mouse */
 .tabla_panes .tar_pan:hover .text_pan {
     top: -140px;
 }
+
+/* Expande el efecto decorativo en la imagen al pasar el mouse */
 .tabla_panes .tar_pan:hover .imgpan::before {
     height: 180px; /* Cambia la altura de ::before */
 }
 
+/* Cambia la posición del círculo decorativo al pasar el mouse */
 .tabla_panes .tar_pan:hover .imgpan::after {
     bottom: 140px;
 }
 
-
+/* Configuración general para una tabla específica */
 table.tabla_panes td {
     width: 200px; /* Ancho de cada celda */
     height: 150px; /* Altura de cada celda */
 }
 
-/*tipos de aria*/
+/* Sección principal que agrupa los tipos de harina */
 .fotos_des {
     width: 100%;
     height: 100vh; /* Asegúrate de que tenga suficiente espacio para ambos elementos */
@@ -121,7 +135,7 @@ table.tabla_panes td {
 
 }
 
-
+/* Contenedor para las tarjetas de harina */
 .container {
     height: auto; /* Permite que el contenedor se ajuste dinámicamente */
     display: flex;
@@ -131,6 +145,7 @@ table.tabla_panes td {
     background: #223;
 }
 
+/* Estilos básicos para cada tarjeta de harina */
 .harina {
     width: 140px;
     border-radius: .75rem;
@@ -145,12 +160,14 @@ table.tabla_panes td {
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
 }
 
+/* Contenido interno de las tarjetas */
 .harina > .tarjetas {
     color: rgb(0, 0, 0);
     display: flex;
     flex-wrap: nowrap;
 }
 
+/* Icono dentro de cada tarjeta */
 .harina > .tarjetas > .icon {
     background: #223;
     color: white;
@@ -162,6 +179,7 @@ table.tabla_panes td {
     margin: 15px;
 }
 
+/* Descripción de cada tipo de harina */
 .harina > .tarjetas > .desc_harina {
     display: flex;
     justify-content: center;
@@ -177,6 +195,7 @@ table.tabla_panes td {
     background-color: rgba(240, 248, 255, 0.373);
 }
 
+/* Estilo para el texto en la descripción */
 .desc_harina p {
     color: #000000;
     margin-left: 30px;
@@ -184,16 +203,20 @@ table.tabla_panes td {
     font-size: 20px;
 }
 
+/* Título dentro de la descripción */
 .desc_harina h4 {
     margin-top: 10px;
     margin-left: 30px;
-    text-transform: uppercase;
+    text-transform: uppercase;/* Convierte el texto a mayúsculas */
     font-size: 30px;
 }
 
+/* Elementos interactivos ocultos inicialmente */
 label{
     height: 80vh;
 }
+
+/* Estilos al activar los elementos ocultos */
 .pasadas{
     display: none;
 }
@@ -202,12 +225,13 @@ label{
     width: 600px;
 }
 
-
+/* Para el Menu de las harinas */
 .pasadas:checked + label .desc_harina {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
+    opacity: 1 !important;/* Muestra la descripción */
+    transform: translateY(0) !important; /* Restaura la posición original */
 }
 
+/* Configuración de imágenes de fondo para cada tarjeta */
 .harina[for="c1"] {
     background-image: url('/assets/ha1.jpg');
 }
@@ -227,6 +251,8 @@ label{
     background-image: url('/assets/ha6.jpg');
 }
 
+
+/* Título general de la sección */
 .titulo_h {
     width: 100%;
     text-align: center;
@@ -252,38 +278,41 @@ div.table-title {
    width: 100%;
  }
 
+/* Da formato a las tablas de datos */
 .tabla {
     margin-right: 30px;
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse;/* Elimina los espacios entre bordes de celdas */
     border-radius: 10px; 
     overflow: hidden; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-
+/* Estilo compartido entre celdas de cabecera y cuerpo */
 th, td {
     padding: 26px 20px;
     text-align: center;
-   
 }
 
-
+/* Estilo específico para las celdas de la cabecera */
 th {
     background-color: #d4bfa3; /* Marrón pastel para la cabecera */
     color: #6a4f3d; /* Texto marrón oscuro */
     font-weight: bold;
 }
 
+/* Estilo por defecto para las filas del cuerpo de la tabla */
 tbody tr {
     background-color: #f4e1c1ca; /* Color de fondo suave para las filas */
 }
 
+/* Cambia el estilo cuando el usuario pasa el cursor sobre una fila */
 tbody tr:hover {
     background-color: #6d3f03; /* Fondo marrón pastel */
     color: white; /* Cambia el color del texto cuando se pasa el cursor */
 }
 
+/* Contenedor del video */
 .video-container {
     position: relative;
     height: 500px;
@@ -292,8 +321,9 @@ tbody tr:hover {
     border-radius: 15px; /* Bordes redondeados */
 
 }
+
+/* Estilo del video dentro del contenedor */
 .video {
-  
     position: absolute; /* Permite posicionar el video dentro del contenedor */
     width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
     height: 100%; /* Asegura que ocupe todo el alto del contenedor */
@@ -301,6 +331,7 @@ tbody tr:hover {
     border-radius: 15px; /* Bordes redondeados en el video */
 }
 
+/* Contenedor de texto superpuesto sobre el video */
 .video_texto {
     display: flex;
     flex-direction: column;
@@ -317,10 +348,12 @@ tbody tr:hover {
     bottom: 0; /* Posiciona la sección en la parte inferior */
 }
 
-
+/* Espaciado adicional para el título de las harinas */
 .titu_harina{
     margin-bottom: 40px;
 }
+
+/* Margen superior para los indicadores de harina */
 .ind_harina{
     margin-top: 20px;
 }

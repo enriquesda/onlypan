@@ -239,7 +239,7 @@ p {
 /*Contenido principal de la pagina*/
 
 main {
-    margin-left: 300px;
+    margin-left: 300px;/*margen para respetar el menu*/
     transition: margin-left 0.5s;
     height: 100vh; /* Establece la altura del contenedor principal igual a la altura de la ventana */
     perspective: 2px;/* Crea un efecto de perspectiva para animaciones 3D */
@@ -254,17 +254,21 @@ main.minmain {
     margin-left: 80px;
 }
 
+/* Aplicar box-sizing a todos los elementos, pseudoelementos before y after */
 *,
 *::before,
 *::after {
+    /* Cambiar el modelo de caja al border-box */
     box-sizing: border-box;
 }
 
+/* Configuración base para el elemento raíz */
 html{
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden;/* Ocultar el desbordamiento del contenido */
 }
 
+/* Estilo para las secciones */
 section {
     display: flex;
     align-items: center;
@@ -273,23 +277,27 @@ section {
     color: #FFF;
 }
 
+/* Configuración general para clases relacionadas con parallax */
 .no-parallax,.parallax,.parallaxden{
     width: 100%;
     min-height: 100vh;
-    position: relative;
-    transform-style: preserve-3d;
+    position: relative;/* Posición relativa para manipular pseudoelementos */
+    transform-style: preserve-3d;/* Habilitar efecto 3D */
 } 
+
+/* Pseudoelemento ::before para la clase parallax */
 .parallax::before{
-    content: "";
+    content: "";    /* Elemento vacío para efectos visuales */
     width: 100%;
     height: 100%;
     position: absolute;
     background: url("../assets/fondopan.jpg") top center;
-    background-size: cover;
-    transform: translateZ(-1px) scale(2.2);
-    filter: blur(2px);
+    background-size: cover;    /* Escalar para cubrir todo el área */
+    transform: translateZ(-1px) scale(2.2);    /* Efecto de desplazamiento en profundidad */
+    filter: blur(2px);    /* Desenfoque del fondo */
 }
 
+/* Pseudoelemento ::after para la clase parallax */
 .parallax::after{
     content: "";
     width: 100%;
@@ -297,9 +305,9 @@ section {
     position: absolute;
     background: url("../assets/fondo_despues.png") top center;
     background-size: cover;
-    
-
 }
+
+/* Pseudoelemento ::before para la clase parallaxden */
 .parallaxden::before{
     content: "";
     width: 100%;
@@ -311,6 +319,7 @@ section {
     filter: blur(2px);
 }
 
+/* Pseudoelemento ::after para la clase parallaxden */
 .parallaxden::after{
     content: "";
     width: 100%;
@@ -321,32 +330,41 @@ section {
     z-index: 5; /* Asegúrate de que esté por encima de otros elementos */
 
 }
+
+/* Estilo adicional para la clase parallaxden */
 .parallaxden{
     color: #000;
 }
+
+/* Estilo para la clase fotopara  que es la foto que baja y sube en el efecto parallax */
 .fotopara{
-    margin-left: -100px;
+    margin-left: -100px;/*Coloco la imagen donde deseo*/
     margin-bottom: 200px;
     width: 200px;
-    transform: translateZ(-0.8px) scale(1.8,1.6)
+    transform: translateZ(-0.8px) scale(1.8,1.6)    /* Efecto de profundidad */
 }
+
+/* Estilo para los elementos con clase sombra dentro de una sección */
 section .sombra {
     width: 800px;
     max-height: 600px;
-    filter: drop-shadow(4px 6px 12px rgb(255, 255, 255));
+    filter: drop-shadow(4px 6px 12px rgb(255, 255, 255));    /* Sombra proyectada */
 }
 
+/* Estilo para los encabezados h1 dentro de una sección */
 section h1 {
     text-align: center;
     font-size: 4rem;
     font-family: sans-serif;
 }
 
+/* Estilo para la clase no-parallax */
 .no-parallax {
     background-color: #fdbe94;
-    z-index: 999;
+    z-index: 999;    /* Prioridad de capa alta, lo llevo a la parte superior para que no lo tape nada*/
 }
 
+/* Estilo para los encabezados h1 dentro de la clase parallax */
 .parallax h1 {
     width: 60%;
     font-size: 5rem;
@@ -357,27 +375,31 @@ section h1 {
 
 
 /*Pagina principal*/
+
+/* Estilo para el contenedor de texto e imágenes */
 .fototext {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
+/* Imágenes dentro de .parallax */
 .parallax img {
     width: 400px;
     min-width: 400px;
     border-radius: 10px;
 }
 
+/* Configuración para elementos que se revelan */
 .revelar {
+    /* Elementos invisibles inicialmente */
     opacity: 0;
     visibility: hidden;
-    will-change: transform, opacity;
+    will-change: transform, opacity;/* Optimización para transformaciones y opacidad */
 }
 
   /*contenedor de fotos*/
-  .container{
+.container{
     position: absolute;
     width: 100%;
     min-height: 100vh;
@@ -385,6 +407,7 @@ section h1 {
     box-shadow: 0 30px 50px #dbdbdb;
 }
 
+/* Configuración para elementos que se revelan */
 .container .slide .item{
     width: 200px;
     height: 300px;
@@ -395,11 +418,12 @@ section h1 {
     box-shadow: 0 30px 50px #505050;
     background-position: 50% 50%;
     background-size: cover;
-    display: inline-block;
+    display: inline-block;/* Configuración de layout */
     transition: 0.5s;
 }
 
 
+/* Estilo específico para los primeros dos elementos */
 .slide .item:nth-child(1),
 .slide .item:nth-child(2){
     top: 0;
@@ -410,16 +434,17 @@ section h1 {
     height: 100%;
 }
 
-
+/* Posicionamiento de otros elementos del slide */
 .slide .item:nth-child(3){
-    left: 50%;
+    left: 70%;
 }
+
 .slide .item:nth-child(4){
-    left: calc(50% + 220px);
+        /* Desplazamiento hacia la derecha */
+    left: calc(70% + 220px);
 }
 
-
-
+/* Contenido dentro de cada item */
 .item .content{
     position: absolute;
     top: 50%;
@@ -429,15 +454,16 @@ section h1 {
     color: #eee;
     transform: translate(0, -50%);
     font-family: system-ui;
+    /* Ocultar contenido por defecto */
     display: none;
 }
 
-
+/* Mostrar contenido solo en el segundo item */
 .slide .item:nth-child(2) .content{
     display: block;
 }
 
-
+/* Estilo para el título */
 .content .name{
     font-size: 80px;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.807);
@@ -447,6 +473,7 @@ section h1 {
     animation: animate 1s ease-in-out 1 forwards;
 }
 
+/* Estilo para la descripción */
 .content .des{
     margin-top: 18px;
     margin-bottom: 20px;
@@ -456,6 +483,7 @@ section h1 {
     animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
 
+/* Estilo para botones dentro del contenido */
 .content button{
     padding: 10px 20px;
     border: none;
@@ -464,14 +492,15 @@ section h1 {
     animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
-
+/* Animación de aparición */
 @keyframes animate {
+    /* Invisibilidad inicial con desenfoque */
     from{
         opacity: 0;
         transform: translate(0, 100px);
         filter: blur(33px);
     }
-
+    /* Elemento visible y nítido */
     to{
         opacity: 1;
         transform: translate(0);
@@ -479,8 +508,7 @@ section h1 {
     }
 }
 
-
-
+/* Contenedor de botones */
 .button{
     width: 100%;
     text-align: center;
@@ -488,6 +516,7 @@ section h1 {
     bottom: 20px;
 }
 
+/* Botones individuales */
 .button button{
     width: 120px;
     height: 75px;
@@ -498,7 +527,10 @@ section h1 {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.807);
     transition: 0.3s;
 }
+
+/* Efecto hover en botones */
 .button button:hover{
+    /* Incrementar tamaño */
     width: 130px;
     height: 95px;
 }

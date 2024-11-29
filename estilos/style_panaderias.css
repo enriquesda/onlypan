@@ -1,3 +1,4 @@
+/* Formulario de contacto o entrada */
 .formulario {
     width: 400px;
     background: rgb(255, 255, 255);
@@ -11,11 +12,13 @@
 
 }
 
+/* Título dentro del formulario */
 .formulario h4 {
     font-size: 22px;
     margin-bottom: 20px;
 }
 
+/* Estilo de los campos de formulario */
 .opcform {
     width: 100%;
     background: #79797951;
@@ -28,6 +31,7 @@
     color: #24303c;
 }
 
+/* Estilo para los párrafos dentro del formulario */
 .formulario p {
     height: 40px;
     text-align: center;
@@ -35,17 +39,19 @@
     line-height: 40px;
 }
 
+/* Estilo para los enlaces dentro del formulario */
 .formulario a {
     color: rgb(207, 140, 85);
-    text-decoration: none;
+    text-decoration: none;/* Subraya el enlace */
 }
 
+/* Estilo para los enlaces cuando se pasa el cursor sobre ellos */
 .formulario a:hover {
     color: rgb(70, 45, 0);
-    ;
-    text-decoration: underline;
+    text-decoration: underline;/* Subraya el enlace */
 }
 
+/* Botón dentro del formulario */
 .Dispara {
     margin-top: 10px;
     width: 100%;
@@ -58,26 +64,29 @@
     cursor: pointer;
 }
 
+/* Estilo para el botón cuando se pasa el cursor sobre él */
 .Dispara:hover {
     background-color: rgb(164, 85, 12);
 }
 
+/* Contenedor de mapas, centrado y con bordes redondeados */
 .mapas {
     border-radius: 20px;
     align-items: center;
     justify-content: center;
 }
 
+/* Estilo de las referencias dentro de un contenedor en forma de grid */
 .referencias {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
+    grid-template-columns: repeat(4, 1fr);/* Cuatro columnas iguales */
     gap: 5px 10px;
     /* Espaciado entre columnas */
 }
 
+/* Estilo para las pastelerías */
 .pastelerias {
-    background-image: var(--imgen);
+    background-image: var(--imgen); /* Imagen de fondo dinámica */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,10 +97,9 @@
     border-radius: 30px;
     margin: 20px;
     width: 300px;
-
-
 }
 
+/* Estilo de los botones webp */
 .webp {
     background-color: rgb(121, 67, 0);
     border-radius: 10px;
@@ -100,26 +108,28 @@
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     /* Transición para color y escalado */
-
-
 }
 
+/* Estilo para el botón webp cuando se pasa el cursor sobre él */
 .webp:hover {
     background-color: rgb(180, 118, 43);
     transform: scale(1.05);
 }
 
+/* Estilo para los enlaces dentro de los botones webp */
 .webp a {
-    color: inherit;
+    color: inherit;/* Hereda el color del contenedor */
     font-size: 20px;
     text-decoration: none;
 }
 
+/* Estilo para los enlaces webp visitados */
 .webp a:visited {
     color: inherit;
     text-decoration: none;
 }
 
+/* Estilo de la descripción */
 .desc {
     text-align: center;
     border-radius: 10px;
@@ -132,21 +142,22 @@
     background-color: rgba(255, 255, 255, 0.462);
 }
 
+/* Título de las pastelerías */
 .ti_pas {
     color: rgb(0, 0, 0);
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.732);
     /* Sombra de texto */
     font-size: 40px;
-
 }
 
+/* Estilo para el título de las pastelerías, con sombra de texto */
 .past_titu {
     margin-top: 150px;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.785);
     /* Sombra de texto */
-
 }
 
+/* Contenedor con marco transparente */
 .marcos_transp {
     width: 350px;
     display: flex;
@@ -157,23 +168,26 @@
 
 
 /*marcos con hober*/
+/* Estilo de los marcos con efecto hover */
 .marcos_transp figure {
-    position: relative;
+    position: relative;/* Necesario para posicionar los elementos dentro del marco */
     width: 300px;
     height: 300px;
     cursor: pointer;
-    overflow: hidden;
+    overflow: hidden;/* Oculta cualquier contenido que sobrepase el marco */
     border-radius: 300px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
 }
 
+/* Estilo de la imagen dentro del marco */
 .marcos_transp figure img {
     width: 100%;
     height: 100%;
-    transition: all 400ms ease-out;
-    will-change: transform;
+    transition: all 400ms ease-out;/* Transición suave para el cambio de tamaño */
+    will-change: transform;/* Optimiza el rendimiento para las transformaciones */
 }
 
+/* Contenedor del texto dentro del marco */
 .marcos_transp figure .marco_seve {
     position: absolute;
     top: 0;
@@ -187,6 +201,7 @@
     transition: all 400ms ease-out;
 }
 
+/* Efecto cuando se hace hover sobre el marco */
 .marcos_transp figure:hover>.marco_seve {
     opacity: 0;
     /* Desaparece al hacer hover */
@@ -195,6 +210,7 @@
     transition: all 400ms ease-out;
 }
 
+/* Estilo del título dentro del marco */
 .marcos_transp figure .marco_seve h1 {
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.807);
@@ -203,32 +219,35 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);/* Ajusta la posición para centrarlo */
     text-align: center;
 }
 
-
+/* Estilo del contenedor del texto adicional */
 .marcos_transp figure .text_marco {
-    position: absolute;
+    position: absolute;/* Posiciona el contenedor encima de la imagen */
     top: 0;
     background: rgba(0, 103, 123, 0.7);
     transition: all 400ms ease-out;
-    opacity: 0;
+    opacity: 0;/* Inicialmente oculto */
     visibility: hidden;
     text-align: center;
     height: 100%;
     width: 100%;
 }
 
+/* Efecto al hacer hover sobre el marco */
 .marcos_transp figure:hover>.text_marco {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1;/* Hace visible el texto */
+    visibility: visible;/* Hace que el texto sea visible */
 }
 
+/* Efecto de zoom en la imagen al hacer hover */
 .marcos_transp figure:hover>img {
-    transform: scale(1.3);
+    transform: scale(1.3);/* Aumenta el tamaño de la imagen */
 }
 
+/* Estilo del encabezado dentro del contenedor de texto */
 .marcos_transp figure .text_marco h3 {
     color: #fff;
     font-weight: 400;
@@ -236,6 +255,7 @@
     transition: all 400ms ease-out;
 }
 
+/* Estilo para el párrafo dentro del contenedor de texto */
 .marcos_transp figure .text_marco p {
     color: #fff;
     font-size: 15px;
@@ -244,13 +264,14 @@
     margin: auto;
 }
 
-
+/* Estilo para los encabezados con márgenes */
 .h1mar {
     margin-top: 300px;
     margin-bottom: 100px;
 
 }
 
+/* Estilo adicional para los encabezados */
 .h1mar {
     margin-top: 200px;
     margin-bottom: 100px;

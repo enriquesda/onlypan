@@ -85,29 +85,47 @@
 
     <main class="contenedor-principal">
         <section class="parallaxden bg">
+
+            <!-- Sección principal con fondo parallax -->
             <h1 class="past_titu revelar revelar_izq">¿Te llevamos el pan a casa?</h1>
+
+            
+            <!-- Contenedor principal de formulario y video -->
             <div class="fototext">
+
+                <!-- Formulario de registro -->
                 <form class="formulario revelar revelar_izq">
                     <h4>Formulario Registro</h4>
+                     <!-- Campo para el nombre de la empresa -->
                     <input class="opcform" type="text" name="nombres" id="Empresa" placeholder="Nombre de la empresa">
+                    <!-- Campo para el nombre del representante -->
                     <input class="opcform" type="text" name="apellidos" id="Representante"
                         placeholder="Nombre del representante">
+                    <!-- Campo para identificación fiscal -->
                     <input class="opcform" type="text" name="nombres" id="Identificacion"
                         placeholder="Introduzca Cif o NIE">
+                    <!-- Campo para el correo electronico -->
                     <input class="opcform" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                    <!-- Campo para contraseña -->
                     <input class="opcform" type="password" name="correo" id="correo" placeholder="Ingrese una contraseña">
-
+                    <!-- Aceptar términos y condiciones -->
                     <label for="terminos" class="checkbox-label">
                         <input type="checkbox" id="terminos">
                         Estoy de acuerdo con <a href="#">Términos y Condiciones</a>
                     </label>
+
+                    <!-- Botón para restablecer el formulario -->
                     <input class="Dispara" type="reset" value="Registrarse" />
+                    <!-- Enlace para iniciar sesión si ya tiene cuenta -->
                     <a href="#">¿Ya tengo Cuenta?</a>
                 </form>
+
+                <!-- Contenedor para el video -->
                 <div class="video-container">
                     <video class="video revelar revelar_der" autoplay muted loop>
                         <source src="/assets/reparte.mp4" type="video/mp4">
                     </video>
+
                     <div class="video_texto revelar revelar_der">
                         <h2 class="revelar">Tu pan en la puerta de cada portal.</h2>
                         <p class="revelar ">Solo preocupate de darle el pan cada mañana a nuestros riders y ellos haran
@@ -118,22 +136,35 @@
 
             </div>
 
+            <!-- Título para la sección de pastelerías asociadas -->
             <h1 class="past_titu revelar">Estas pastelerias  ya han dado el paso:</h1>
+
+           <!-- Contenedor de referencias a pastelerías --> 
             <div class="referencias">
+
+                <!-- Contenedor de referencias a pastelerías -->
                 <div class="pastelerias revelar revelar_izq" style="--imgen:url('/assets/past1.jpg')">
+                    <!-- Titulo de una de las pastelerias -->
                     <h1 class="ti_pas">Revive</h1>
+
+                    <!-- Mapa embebido desde Google Maps -->
                     <div>
                         <iframe class="mapas"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.49821080638!2d-6.752969623740306!3d38.591401664700726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16c9f0d3cd1bd1%3A0x50f065ddf489cd8a!2sPanader%C3%ADa%20Pasteler%C3%ADa%20Revive!5e0!3m2!1ses!2ses!4v1732189205064!5m2!1ses!2ses"
                             width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+
+                    <!-- Enlace a la web de la pastelería -->
                     <div class="webp">
                         <a href="https://panaderiapasteleriarevive.com/" target="_blank">Mas informacion</a>
                     </div>
+
+                    <!-- Descripción de la pastelería -->
                     <p class="desc">Pan artesanal con sabor a tradición y calidad.</p>
                 </div>
 
+                <!-- se repite mas de lo mismo -->
                 <div class="pastelerias revelar revelar_der" style="--imgen:url('/assets/pan2.webp')">
                     <h1 class="ti_pas">Pan Contigo</h1>
                     <div>
@@ -236,15 +267,27 @@
                 </div>
 
             </div>
+
+            <!-- Título para la sección de beneficios -->
             <h1 class="h1mar revelar revelar_izq">¿Porque utilizar nuestra aplicación? </h1>
+           
+           <!-- Contenedor con beneficios de usar la aplicación -->
             <div class="fototext">
+
+                <!-- Beneficio individual -->
                 <div class="marcos_transp revelar">
                     <a href="#">
                         <figure>
+
+                             <!-- Imagen del beneficio -->
                             <img src="/assets/fon1.jpg" alt="Imagen con Efecto Hover">
+
+                            <!-- Texto con título del beneficio -->
                             <div class="marco_seve">
                                 <h1>Aumenta tus ventas</h1>
                             </div>
+
+                            <!-- Descripción del beneficio -->
                             <div class="text_marco">
                                 <h3>Con reparto a domicilio</h3>
                                 <p>Mas gente podra tener acceso a sus productos desde la comodidad de sus casas.</p>
@@ -252,6 +295,8 @@
                         </figure>
                     </a>
                 </div>
+
+                <!-- se repite para cada uno de los 4 beneficios -->
                 <div class="marcos_transp revelar">
                     <a href="#">
                         <figure>
@@ -300,6 +345,8 @@
                     </a>
                 </div>
             </div>
+
+            <!-- Llamado final a la acción -->
             <h1 class="h1mar2 revelar revelar_izq">Asique no lo dudes mas y ponte en contacto con nosotros.</h1>
 
         </section>

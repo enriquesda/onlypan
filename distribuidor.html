@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,14 @@
     <link rel="icon" href="/assets/logop.png" type="image/x-icon">
 
 </head>
+
 <body>
-    <div class="barra-lateral "> <!--usaremos dos clases, una tiene el formato normal y la otra para cuando necesitemos que sea pequeña-->
-        
+    <div class="barra-lateral ">
+        <!--usaremos dos clases, una tiene el formato normal y la otra para cuando necesitemos que sea pequeña-->
+
         <div class="nombre-pagina">
-            <img  class="Original" id="cloud" src="/assets/logogrande.png" alt="" >
-            <img class="mini" id="cloud" src="/assets/logop.png" alt="" >
+            <img class="Original" id="cloud" src="/assets/logogrande.png" alt="">
+            <img class="mini" id="cloud" src="/assets/logop.png" alt="">
         </div>
 
         <button class="boton">
@@ -62,7 +65,7 @@
                     </a>
                 </li>
 
-                
+
 
             </ul>
         </nav>
@@ -82,38 +85,57 @@
     </div>
 
     <main class="contenedor-principal">
+
+        <!-- Sección sin efecto parallax -->
         <section class="no-parallax">
+        
+            <!-- Título principal de la sección -->
             <h1 class="past_titu revelar revelar_izq">¿Quieres ser uno de nuestros distribuidores?</h1>
             <div class="fototext">
+
+                <!-- Formulario para que los interesados en ser distribuidores puedan registrarse -->
                 <form class="formulario revelar revelar_izq">
                     <h4>Contacta con nosotros</h4>
-                    <input class="opcform" type="text" name="nombres" id="Empresa" placeholder="Nombre ">
-                    <input class="opcform" type="text" name="apellidos" id="Representante"
-                        placeholder="Apellido">
-                    <input class="opcform" type="text" name="nombres" id="Identificacion"
-                        placeholder="DNI">
-                    <input class="opcform" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-                    <input class="opcform" type="password" name="correo" id="correo" placeholder="Ingrese una contraseña">
 
+                    <!-- Campos del formulario para recopilar información personal -->
+                    <input class="opcform" type="text" name="nombres" id="Empresa" placeholder="Nombre ">
+                    <input class="opcform" type="text" name="apellidos" id="Representante" placeholder="Apellido">
+                    <input class="opcform" type="text" name="nombres" id="Identificacion" placeholder="DNI">
+                    <input class="opcform" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                    <input class="opcform" type="password" name="correo" id="correo"
+                        placeholder="Ingrese una contraseña">
+
+
+                    <!-- Checkbox para aceptar términos y condiciones -->
                     <label for="terminos" class="checkbox-label">
                         <input type="checkbox" id="terminos">
                         Estoy de acuerdo con <a href="#">Términos y Condiciones</a>
                     </label>
+
+                     <!-- Botón para enviar los datos del formulario -->
                     <input class="Dispara" type="reset" value="Enviar" />
                 </form>
+
+                <!-- Contenedor para el video promocional -->
                 <div class="video-container">
+
+                    <!-- Video en reproducción automática, sin sonido y en bucle -->
                     <video class="video revelar revelar_der" autoplay muted loop>
                         <source src="/assets/repartidor.mp4" type="video/mp4">
                     </video>
+
+                     <!-- Texto superpuesto sobre el video -->
                     <div class="video_texto revelar revelar_der">
                         <h2 class="revelar">¿Quieres trabajar con nosotros?</h2>
-                        <p class="revelar ">Necesitamos repartidores para el reparto de nuestros panes , jornada laboral completa de 6,00h-14,00h .Nosotros proveeremos de motos o medios de transporte adecuados para nuestros riders.</p>
+                        <p class="revelar ">Necesitamos repartidores para el reparto de nuestros panes , jornada laboral
+                            completa de 6,00h-14,00h .Nosotros proveeremos de motos o medios de transporte adecuados
+                            para nuestros riders.</p>
                     </div>
                 </div>
 
 
             </div>
-          </section>    
+        </section>
     </main>
 
 
@@ -127,4 +149,5 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
